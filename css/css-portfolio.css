@@ -650,7 +650,8 @@ width: 300px;height: 300px;
 
 
 .stars-bg{
-  background-image: url(../img/stars.jpg);background-size: cover;
+  background-image: url(..../img/stars.jpg);background-size: cover;
+  
             background-repeat: no-repeat; height:100vh;
             perspective: 1200px;
             perspective-origin: 50% 50%;
@@ -676,8 +677,8 @@ width: 300px;height: 300px;
 .planet:hover{
   /* filter: hue-rotate(90deg) brightness(0.9) ; */
  
-  cursor: url(/img/fusee.cur), auto !important; 
-  cursor: url(/img/fusee.cur), auto !important; 
+  cursor: url(../img/fusee.cur), auto !important; 
+  cursor: url(../img/fusee.cur), auto !important; 
 
     box-shadow: 6px 9px 15px -1px #00F7D1;
   
@@ -689,53 +690,53 @@ width: 300px;height: 300px;
   z-index: 1;
   animation: sport 200s infinite;
 
-   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('/img/marabout.jpeg');
+   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('../img/marabout.jpeg');
 }
 .planet-marabou{
   animation: marabou 200s infinite;
   z-index: 8;
 
-   background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('/img/marabout.jpeg');
+   background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('../img/marabout.jpeg');
  
 }
 .planet-jedeclare{
   animation: jedeclare 200s infinite;
   z-index: 10;
 
-   background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('/img/jedeclare.jpg'); 
+   background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('../img/jedeclare.jpg'); 
 }
 .planet-gpnet{
   animation: gpnet 100s infinite;
   z-index: 4;
 
-   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('/img/gpnet.jpg'); 
+   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('../img/gpnet.jpg'); 
 }
 .planet-mywordsorter{
   animation: mywordsorter 200s infinite;
   z-index: 6;
 
-   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('/img/mywordsorter.PNG'); 
+   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('../img/mywordsorter.PNG'); 
  
 }
 .planet-dga{
   animation: dga 100s infinite;
   z-index: 5;
 
-   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('/img/dga.jpg'); 
+   background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('../img/dga.jpg'); 
   
 }
 .planet-rsi{
   animation: rsi 100s infinite;
   z-index: 7;
  
-  background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('/img/rsi.jpg'); 
+  background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('../img/rsi.jpg'); 
  
 }
 .planet-caf{
   animation: caf 200s infinite;
   z-index: 9;
  
-   background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('/img/caf.jpg'); 
+   background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('../img/caf.jpg'); 
 
 }
 
