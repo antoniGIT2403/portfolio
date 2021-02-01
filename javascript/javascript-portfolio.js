@@ -146,10 +146,12 @@
            else{
             b = 82 
            }
-       
-container.style.background = `rgb(${r}, ${g}, ${b})`
-container.style.background = `linear-gradient(111deg, rgba(${r}, ${g}, ${b},1) 0%, rgba(${r}, ${g}, ${b},1) 56%, rgba(4,80,149,1) 100%)`
-         ;
+           document.documentElement
+container.style.background = `rgb(${r}, ${g}, ${b})` ;
+container.style.background = `linear-gradient(111deg, rgba(${r}, ${g}, ${b},1) 0%, rgba(${r}, ${g}, ${b},1) 56%, rgba(4,80,149,1) 100%)` ;
+document.documentElement.style.background = `rgb(${r}, ${g}, ${b})` ;
+document.documentElement.style.background = `linear-gradient(111deg, rgba(${r}, ${g}, ${b},1) 0%, rgba(${r}, ${g}, ${b},1) 56%, rgba(4,80,149,1) 100%)` ;
+
          container.style.width =  window.innerWidth;
       // if(r === 51 && g === 54 && b === 82){
       //  

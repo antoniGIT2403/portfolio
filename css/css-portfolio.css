@@ -1,6 +1,7 @@
 /* canvas {
  
 } */
+
 p{
   font-family: Audiowide;
 }
@@ -68,9 +69,19 @@ span {
   .centered{
     width: 70%;
   }
+  .dl-cv-link{
+
+
+  padding-top:30px;
+}
 
 }
 @media screen and (min-width: 993px) {
+  .dl-cv-link{
+
+    padding-left:1;
+  padding-top:12px;
+}
   .titre-landing{
     font-family: 'Audiowide', cursive;font-size:4rem;width: 60%;
   }
@@ -273,9 +284,7 @@ color:  #00F7D1;
   font-family: "Audiowide", sans-serif;;
   text-decoration: underline;
   cursor: pointer;
-  
-padding-left:25px;
-padding-top:12px
+
 
 
 
@@ -986,6 +995,7 @@ color: #FAD02C;
   text-align: left;
   font-family: sans-serif;
   letter-spacing: 2px;
+  padding-left: 8px;
 }
 
 .bg-special-item{
@@ -1093,4 +1103,26 @@ box-shadow: 6px 9px 15px -1px #000000;
 .btn-envoyer-mail:hover i{
   transition: transform 1s;
 transform:rotate(130deg);
+}
+
+
+.back-landpage{
+  text-align: center; 
+  width: 100%;
+   padding-bottom: 2rem; 
+   display: flex;
+        justify-content: center; 
+        margin-top: 5rem;
+
+}
+#btn-retour  i:hover{
+
+transform: scale(1.2);
+color:#00F7D1;
+
+}
+@media screen and (max-width: 993px) {
+  .align-responsive{
+    text-align: center;
+  }
 }

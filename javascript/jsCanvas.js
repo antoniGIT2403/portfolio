@@ -18,7 +18,7 @@
     var context = canvas.getContext('2d');
 
     // Make width and height equal to tha of the browser window
-    var width = canvas.width = win.innerWidth;
+    var width = canvas.width = win.innerWidth-50;
     var height = canvas.height = win.innerHeight;
 
     // Placeholder for mouse co-ords
