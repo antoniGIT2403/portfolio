@@ -79,11 +79,11 @@
                         <img  class="inline-photo show-on-scroll gradient-border my-profil-img" style="animation-delay:0.3s;"  src="img/anto.jpg"
                             alt="">
                         <p class="inline-photo show-on-scroll  mydescription " style="animation-delay:0.5s;" >After I obtained a double degree in both
-                            computer science and electronics 4 years ago, I decided to focus my career on application
-                            development. I have 2 and a half years experience as full stack Java developer ( rest and
-                            JSF) but since my last experience in Angular 6 I have decided to be a bit more "front-end
-                            oriented". Now I want both to keep my java skills up to date and to accumulate a deeper
-                            front-end knowledge. <span class="typewriter-anim">|</span> </p>
+                            computer science and electronics 6 years ago, I decided to focus my career on web application
+                            development. I started with various full stack projects in different area and I realised that I was naturally attracted by the front end part.
+                            I am in fond of the art world for a long time now, I draw and paint regularly and I am always looking for a way to express myself. 
+                            The front-end world allows  me to reunite my love for engineering and art.  Therefore, I  work with passion and energy to deliver the best work I can. 
+                            I am looking forward to use my  skills and creativity to really add value to your project.  <span class="typewriter-anim">|</span> </p>
 
                     </div>
                     
@@ -232,90 +232,130 @@ margin-bottom: 0;    font-family: sans-serif; "> Click on a planet to see more i
 
                 <div class="stars-bg show-on-scroll" id="starsbg">
 
-                    <div onclick="displayPlanet(this,'planet-marabou','maraboucontent')" id="btnmarabou"
+                    <div onclick="displayPlanet(this,'planet-marabou','maraboucontent','maraboutitle')" id="btnmarabou"
                         class="planet planet-marabou marabou-size">
+                        <div id="maraboutitle" class="cadre-planet"  style="  right: 80%;"> 
+                            <span style="color:white; " >Marabou </span>
+                         
+                        </div>
+
 
                         <div id="maraboucontent" class="content-planet size-content">
                             <span class="titre-projet"> Maraboutown</span>
 
                             <span class="info-projet"><i class="far fa-calendar-alt"></i></i> 4 months</span>
                             <span class="info-projet"><i class="fas fa-laptop"></i> Angular - Html - Css</span>
+                            <div class="cadre-planet" style="  top: 95%;  right: 0%;">  
                             <span class="description-projet">  Web site I coded from scratch for my brother music band. The website is available here :
                                 <a style="color: white;" rel="noopener"   target="_blank"
                                     href="https://www.maraboutown.fr/">https://www.maraboutown.fr/</a>
                             </span>
-                            <div onclick="hidePlanet('btnmarabou','planet-marabou','maraboucontent',event)"
+                        </div>
+                            <div onclick="hidePlanet('btnmarabou','planet-marabou','maraboucontent',event, 'maraboutitle')"
                                 class="link-leave-planet" id="leavemarabou"> Leave this planet <i
                                     class="fas fa-rocket"></i> </div>
                         </div>
 
                     </div>
-                    <div onclick="displayPlanet(this,'planet-caf','cafcontent')" id="btncaf"
+                    <div onclick="displayPlanet(this,'planet-caf','cafcontent','cnaftitle')" id="btncaf"
                         class="planet planet-caf caf-size">
+                        <div id="cnaftitle" class="cadre-planet" style="  right: 80%;"> 
+                            <span style="color:white; " >CNAF </span>
+                            <div>
+                     
+
+                            </div>
+                           
+                        </div>
+
 
                         <div id="cafcontent" class="content-planet size-content">
                             <span class="titre-projet">CNAF</span>
 
                             <span class="info-projet"><i class="far fa-calendar-alt"></i></i> 2 years</span>
                             <span class="info-projet"><i class="fas fa-laptop"></i> Java 8 - JSF2 - Spring boot</span>
+                            <div class="cadre-planet" style="  top: 95%;  right: 0%;">  
                             <span class="description-projet"> We developped "Offre bailleur", a web application from scratch as team of 8 people for the CNAF company. 
                             </span>
-                            <div onclick="hidePlanet('btncaf','planet-caf','cafcontent',event)"
+                        </div>
+                            <div onclick="hidePlanet('btncaf','planet-caf','cafcontent',event,'cnaftitle')"
                                 class="link-leave-planet" id="leavecaf"> Leave this planet <i class="fas fa-rocket"></i>
                             </div>
                         </div>
 
                     </div>
-                    <div onclick="displayPlanet(this,'planet-gpnet','gpnetcontent')" id="btngpnet"
+                    <div onclick="displayPlanet(this,'planet-gpnet','gpnetcontent','gpnettitle')" id="btngpnet"
                         class="planet planet-gpnet gpnet-size">
+
+                        <div id="gpnettitle" class="cadre-planet" style="  left: 80%;"> 
+                            <span style="color:white; " >Airfrance </span>
+                        </div>
 
                         <div id="gpnetcontent" class="content-planet size-content">
                             <span class="titre-projet"> Air france</span>
 
                             <span class="info-projet"><i class="far fa-calendar-alt"></i></i> 4 months</span>
                             <span class="info-projet"><i class="fas fa-laptop"></i> Java 8 - Spring - Struts</span>
+                            <div class="cadre-planet" style="  top: 95%;  right: 0%;">  
                             <span class="description-projet"> 
                                 I was a back-up developper on 3 different aifrance projects (gpnet, comops, sbtpart). They were internal projects for ticket reservation. 
                             </span>
-                            <div onclick="hidePlanet('btngpnet','planet-rsi','rsicontent',event)"
+                        </div>
+                            <div onclick="hidePlanet('btngpnet','planet-rsi','rsicontent',event,'gpnettitle')"
                                 class="link-leave-planet" id="gpnetjdc"> Leave this planet <i class="fas fa-rocket"></i>
                             </div>
                         </div>
 
                     </div>
-                    <div onclick="displayPlanet(this,'planet-dga','dgacontent')" id="btndga"
+                    <div onclick="displayPlanet(this,'planet-dga','dgacontent','dgatitle')" id="btndga"
                         class="planet planet-dga dga-size">
+
+                        <div id="dgatitle" class="cadre-planet" style="  right: 80%;"> 
+                            <span style="color:white; " >DGA </span>
+                        </div>
 
                         <div id="dgacontent" class="content-planet size-content">
                             <span class="titre-projet">  DGA  Portal</span>
 
                             <span class="info-projet"><i class="far fa-calendar-alt"></i></i> 6 months</span>
                             <span class="info-projet"><i class="fas fa-laptop"></i> Angular 6 - Html - Keycloack </span>
+                            <div class="cadre-planet" style="  top: 95%;  right: 0%;">  
                             <span class="description-projet"> This project was a prototype for the DGA. I had to take care of the front-end part in Angular by myself. </span>
-                            <div onclick="hidePlanet('btndga','planet-dga','dgacontent',event)"
+                        </div>
+                            <div onclick="hidePlanet('btndga','planet-dga','dgacontent',event,'dgatitle')"
                                 class="link-leave-planet" id="leavedga"> Leave this planet <i class="fas fa-rocket"></i>
                             </div>
                         </div>
 
                     </div>
-                    <div onclick="displayPlanet(this,'planet-rsi','rsicontent')" id="btnrsi"
-                        class="planet planet-rsi rsi-size">
+                    <div onclick="displayPlanet(this,'planet-rsi','rsicontent','rsititle')" id="btnrsi"
+                        class="planet planet-rsi rsi-size" >
+                        <div id="rsititle" class="cadre-planet" style="  left: 80%;"> 
+                            <span style="color:white; " > RSI </span>
+                        </div>
+
 
                         <div id="rsicontent" class="content-planet size-content">
                             <span class="titre-projet"> RSI</span>
 
                             <span class="info-projet"><i class="far fa-calendar-alt"></i></i> 6 months</span>
                             <span class="info-projet"><i class="fas fa-laptop"></i> Java 7 - Vba - Soap</span>
+                            <div class="cadre-planet" style="  top: 95%;  right: 0%;">  
                             <span class="description-projet"> 
                             During this project, I was part of team of 40 people to maintain a large web Application for the RSI company. 
                             </span>
-                            <div onclick="hidePlanet('btnrsi','planet-rsi','rsicontent',event)"
+                        </div>
+                            <div onclick="hidePlanet('btnrsi','planet-rsi','rsicontent',event, 'rsititle')"
                                 class="link-leave-planet" id="leaversi"> Leave this planet <i class="fas fa-rocket"></i>
                             </div>
                         </div>
                     </div>
-                    <div onclick="displayPlanet(this,'planet-jedeclare','jedeclarecontent')" id="btnjedeclare"
+                    <div onclick="displayPlanet(this,'planet-jedeclare','jedeclarecontent','jedeclaretitle')" id="btnjedeclare"
                         class="planet planet-jedeclare jedeclare-size ">
+
+                        <div id="jedeclaretitle" class="cadre-planet" style="  right: 80%;"> 
+                            <span style="color:white; " >Docaposte </span>
+                        </div>
 
                         <div id="jedeclarecontent" class="content-planet size-content">
                             <span class="titre-projet"> Docaposte</span>
@@ -323,10 +363,12 @@ margin-bottom: 0;    font-family: sans-serif; "> Click on a planet to see more i
                             <span class="info-projet"><i class="far fa-calendar-alt"></i></i> 1 and half year</span>
                             <span class="info-projet"><i class="fas fa-laptop"></i> Java 8+ - Angular 9 - Spring boot
                             </span>
+                            <div class="cadre-planet" style="  top: 95%;  right: 0%;"> 
                             <span class="description-projet">
                             Jedeclare is a large web application  for accountants in France. I was part of a 30 people team, I was both maintening the old version and reforging the application with new technologies. 
                             </span>
-                            <div onclick="hidePlanet('btnjedeclare','planet-jedeclare','jedeclarecontent',event)"
+                        </div>
+                            <div onclick="hidePlanet('btnjedeclare','planet-jedeclare','jedeclarecontent',event,'jedeclaretitle')"
                                 class="link-leave-planet" id="leavejdc"> Leave this planet <i class="fas fa-rocket"></i>
                             </div>
                         </div>
@@ -385,7 +427,9 @@ margin-bottom: 0;    font-family: sans-serif; "> Click on a planet to see more i
         </div>
         <div class="back-landpage" >
             <a href="#myCanvas" rel="noopener"`>
-                <div id="btn-retour" style="width: 60px;"> <i class="fas fa-angle-double-up fa-3x"></i> </div>
+                <div id="btn-retour" style="width: 60px;"> <i style="transform: rotate(
+                    315deg
+                    );" class="fas fa-rocket fa-3x"></i> </div>
             </a>
         </div>
         <footer>

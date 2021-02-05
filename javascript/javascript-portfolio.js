@@ -10,34 +10,37 @@ var r = 0;
 var g = 0;
 var b = 0;
 
-window.addEventListener("scroll", () => {
-  const y = (window.scrollY || window.pageYOffset) / 60;
+// window.addEventListener("scroll", () => {
+//   const y = (window.scrollY || window.pageYOffset) / 60;
 
-  if (y < 51) {
-    r = y;
-  } else {
-    r = 51;
-  }
+//   if (y < 51) {
+//     r = y;
+//   } else {
+//     r = 51;
+//   }
 
-  if (y < 54) {
-    g = y;
-  } else {
-    g = 54;
-  }
+//   if (y < 54) {
+//     g = y;
+//   } else {
+//     g = 54;
+//   }
 
-  if (y < 82) {
-    b = y;
-  } else {
-    b = 82;
-  }
-  document.documentElement;
-  container.style.background = `rgb(${r}, ${g}, ${b})`;
-  container.style.background = `linear-gradient(111deg, rgba(${r}, ${g}, ${b},1) 0%, rgba(${r}, ${g}, ${b},1) 56%, rgba(4,80,149,1) 100%)`;
-  document.documentElement.style.background = `rgb(${r}, ${g}, ${b})`;
-  document.documentElement.style.background = `linear-gradient(111deg, rgba(${r}, ${g}, ${b},1) 0%, rgba(${r}, ${g}, ${b},1) 56%, rgba(4,80,149,1) 100%)`;
+//   if (y < 82) {
+//     b = y;
+//   } else {
+//     b = 82;
+//   }
+  
+  // container.style.background = `rgb(${r}, ${g}, ${b})`;
+  // container.style.background = `linear-gradient(111deg, rgba(${r}, ${g}, ${b},1) 0%, rgba(${r}, ${g}, ${b},1) 56%, rgba(4,80,149,1) 100%)`;
+  // document.documentElement.style.background = `rgb(${r}, ${g}, ${b})`;
+  // container.style.background = `rgb(0, 0, 0)`;
+  
+  document.documentElement.style.background = `rgb(0, 0, 0)`;
+  
 
   container.style.width = window.innerWidth;
-});
+// });
 
 ScrollReveal().reveal(".test", { delay: 500 });
 ScrollReveal().reveal(".bloc1", { delay: 500 });
@@ -127,35 +130,37 @@ document.getElementById("gpnetcontent").hidden = true;
 
 var bgstars = document.getElementById("starsbg");
 
-function displayPlanet(planet, planetCss, planetContentId) {
+function displayPlanet(planet, planetCss, planetContentId,titleId) {
   // let planet = document.getElementById(planetId)
   planet.classList.add("planet-focus-size");
   planet.classList.remove("leave-planet");
   planet.classList.replace(planetCss, "focus-planet");
   document.getElementById(planetContentId).hidden = false;
-
-  clickOutside(planet, planetCss, planetContentId);
+  document.getElementById(titleId).hidden = true;
+  clickOutside(planet, planetCss, planetContentId,titleId);
 }
 
-function clickOutside(planet, planetCss, planetContentId) {
+function clickOutside(planet, planetCss, planetContentId,titleId) {
   bgstars.addEventListener("click", (e) => {
     if (e.target != planet) {
       planet.classList.remove("planet-focus-size");
       planet.classList.replace("focus-planet", planetCss);
       planet.classList.add("leave-planet");
       document.getElementById(planetContentId).hidden = true;
+      document.getElementById(titleId).hidden = false;
       // bgstars.removeEventListener('click')
       e.stopPropagation();
     }
   });
 }
 
-function hidePlanet(planetId, planetCss, planetContentId, event) {
+function hidePlanet(planetId, planetCss, planetContentId, event,titleId) {
   let planet = document.getElementById(planetId);
   planet.classList.remove("planet-focus-size");
   planet.classList.replace("focus-planet", planetCss);
   planet.classList.add("leave-planet");
   document.getElementById(planetContentId).hidden = true;
+  document.getElementById(titleId).hidden = false;
 
   event.stopPropagation();
 }
