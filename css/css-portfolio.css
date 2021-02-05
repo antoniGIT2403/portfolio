@@ -505,6 +505,7 @@ background-repeat: no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
+            animation-timing-function: ease;
 }
 
 .planet:hover{
@@ -539,23 +540,23 @@ background-repeat: no-repeat;
    /* background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('../img/jedeclare.jpg');  */
 }
 .planet-gpnet{
-  animation: gpnet 100s infinite;
+  animation: gpnet 160s infinite;
   z-index: 4;
    /* background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('../img/gpnet.jpg');  */
-   border:3px dashed  white;
+   border:4px dashed  white;
    background: rgb(0,0,0);
    background: linear-gradient(118deg, rgba(0,0,0,0.9640449929971989) 8%, rgba(0,0,0,1) 62%, rgba(102,102,102,1) 100%);
   }
 .planet-mywordsorter{
-  animation: mywordsorter 200s infinite;
+  animation: mywordsorter 210s infinite;
   z-index: 6;
    background-image:linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ),  url('../img/mywordsorter.PNG'); 
  
 }
 .planet-dga{
-  animation: dga 100s infinite;
+  animation: dga 170s infinite;
   z-index: 5;
-  border:3px dotted  white;
+  border:4px dotted  white;
   background: rgb(0,0,0);
   background: linear-gradient(118deg, rgba(0,0,0,0.9640449929971989) 8%, rgba(0,0,0,1) 62%, rgba(102,102,102,1) 100%);
 
@@ -563,9 +564,9 @@ background-repeat: no-repeat;
    */
 }
 .planet-rsi{
-  animation: rsi 100s infinite;
+  animation: rsi 180s infinite;
   z-index: 7;
-  border:3px inset  white;
+  border:4px inset  white;
   background: rgb(0,0,0);
   background: linear-gradient(118deg, rgba(0,0,0,0.9640449929971989) 8%, rgba(0,0,0,1) 62%, rgba(102,102,102,1) 100%);
   /* background:   radial-gradient(circle at 230px 105px,#4D4637, rgb(133, 131, 131)); */
@@ -575,7 +576,7 @@ background-repeat: no-repeat;
 .planet-caf{
   animation: caf 200s infinite;
   z-index: 9;
-  border:3px solid  white;
+  border:4px solid  white;
   background: rgb(0,0,0);
   background: linear-gradient(118deg, rgba(0,0,0,0.9640449929971989) 8%, rgba(0,0,0,1) 62%, rgba(102,102,102,1) 100%);
    /* background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(77,77,77,0.2) 42%, rgba(53, 107, 161, 0.31) 95% ), url('../img/caf.jpg');  */
@@ -870,7 +871,10 @@ box-shadow: 6px 9px 15px -1px #000000;
   }
   .text-special-item{
     z-index: 10;
-    background-color:rgb(95 94 94);
+    /* background-color:rgb(95 94 94); */
+    border: 2px solid grey;
+
+    background-color: rgb(32, 32, 32);
     position: absolute;
     right: 30px;
       width: 65%;
@@ -906,7 +910,10 @@ box-shadow: 6px 9px 15px -1px #000000;
   }
   .text-special-item{
     z-index: 10;
-    background-color:rgb(95 94 94);
+    /* background-color:rgb(95 94 94); */
+    border: 2px solid grey;
+
+    background-color: rgb(32, 32, 32);
     position: absolute;
     right: 30px;
       width: 200px;
