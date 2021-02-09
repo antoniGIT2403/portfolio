@@ -59,7 +59,15 @@ var scroll =
 var elementsToShow = document.querySelectorAll(".show-on-scroll");
 var elementProgess = document.getElementById("skillBars");
 var elementsProgressBar = document.querySelectorAll(".progress-bar");
-var tableValMaxSkill = [90, 85, 80, 75, 70, 50, 20, 10];
+var languageSkillTable =[90, 85, 80, 75, 70, 60, 45];
+var frameworkSkillTable =[85, 70, 70, 55, 30];
+var softwareSkillTable =[80, 75, 70, 65];
+var databaseSkillTable =[65, 60, 55, 50];
+var tableValMaxSkill = [];
+tableValMaxSkill.push(...languageSkillTable)
+tableValMaxSkill.push(...frameworkSkillTable)
+tableValMaxSkill.push(...softwareSkillTable)
+tableValMaxSkill.push(...databaseSkillTable)
 var i = 0;
 
 function setSkills(index, valMax) {
@@ -164,3 +172,61 @@ function hidePlanet(planetId, planetCss, planetContentId, event,titleId) {
 
   event.stopPropagation();
 }
+
+
+var languageskill = document.getElementById("language")
+var frameworkskill = document.getElementById("framework")
+var softwareskill = document.getElementById("software")
+var databaseskill = document.getElementById("database")
+languageskill.hidden  = false;
+frameworkskill.hidden = true;
+softwareskill.hidden= true;
+databaseskill.hidden = true;
+
+function displayskill(navactive,skill){
+  cleanCssActif();
+  navactive.classList.add("active-nav");
+  switch (navactive,skill) {
+    case 'language':
+      
+      languageskill.hidden  = false;
+      frameworkskill.hidden = true;
+      softwareskill.hidden= true;
+      databaseskill.hidden = true;
+     
+      break;
+    case 'framework':
+     
+      languageskill.hidden  = true;
+      frameworkskill.hidden = false;
+      softwareskill.hidden= true;
+      databaseskill.hidden = true;
+     
+      break;
+    case 'software':
+  
+      languageskill.hidden  = true;
+      frameworkskill.hidden = true;
+      softwareskill.hidden= false;
+      databaseskill.hidden = true;
+      break;
+      case 'database':
+      
+        languageskill.hidden  = true;
+        frameworkskill.hidden = true;
+        softwareskill.hidden= true;
+        databaseskill.hidden = false;
+        break;
+    default:
+     
+  }
+  
+  function cleanCssActif(){
+    navArray = document.querySelectorAll('.nav-skill');
+    navArray.forEach(element => {
+      element.classList.remove("active-nav");
+    });
+  }
+
+}
+

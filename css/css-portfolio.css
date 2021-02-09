@@ -22,7 +22,7 @@ span {
 .label-skillbar{
   color:#E9EAEC; 
   margin: 0.5rem;
-  min-width: 100px;
+  min-width: 130px;
 }
 @media screen and (max-width: 992px) {
   .containerResponsive{
@@ -468,7 +468,7 @@ html {
 .my-profil-img{
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-width: 300px;height: 300px;    
+width: 350px;height: 350px;    
      border-bottom: 6px solid #FAD02C; 
 }
 .my-profil-img:hover{
@@ -663,9 +663,11 @@ background-repeat: no-repeat;
 .info-projet{
   font-style: italic;    padding-bottom: 3px;
    font-family: sans-serif;
+   /* color:black; */
 }
 .info-projet i{
    padding: 2px;
+   /* color:black; */
 }
 .content-planet p{
  font-size: 0.5rem;
@@ -894,6 +896,8 @@ box-shadow: 6px 9px 15px -1px #000000;
 @media (max-width: 991px){
   .link-leave-planet{
     margin-top:0.2rem;
+    position: absolute;
+    bottom: -1rem;
 
   }
   .size-special-item{
@@ -978,9 +982,46 @@ color:#00F7D1;
 .cadre-planet{
   position: absolute;
   top: 10%;
+  padding: 5px;
+  border: 2px solid grey;
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+}
+
+
+.cadre-planet-focus{
 
   padding: 5px;
   border: 2px solid grey;
   text-align: center;
   background-color: rgb(32, 32, 32);
+  margin-bottom: 0.7rem;
+}
+.cadre-secondaire{
+border-radius: 2px;
+  padding: 2px;
+  margin-top: 3px;
+  
+  background-color:transparent;
+  color: #000000;
+  border: 1px solid white;
+}
+
+.active-nav{
+  border-bottom: 2px solid  #FAD02C ;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 993px) {
+  .cadre-secondaire{
+    border-radius: 2px;
+      padding: 1px;
+      margin-top: 4px;
+      
+      background-color:black;
+      color: #000000;
+      border: 1px solid white;
+    }
+    .cadre-secondaire span{
+   font-size:5px;
+      }
 }
