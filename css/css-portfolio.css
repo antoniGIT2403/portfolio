@@ -25,6 +25,9 @@ span {
   min-width: 130px;
 }
 @media screen and (max-width: 992px) {
+  .displayresume{
+    display: none !important;
+  }
   .containerResponsive{
     margin-left: 0;
   }
@@ -66,6 +69,7 @@ span {
 
 }
 @media screen and (min-width: 993px) {
+
   .dl-cv-link{
 
     padding-left:10px;
@@ -230,6 +234,7 @@ display: inline-block;
     padding: 7px 18px;
     border: 1px solid#00F7D1;
     float: left;
+    margin-bottom: 10px;
 
 }
 .flat-button i {
