@@ -860,6 +860,12 @@ box-shadow: 6px 9px 15px -1px #000000;
   font-style: italic;
 }
 @media (min-width: 992px){
+  .mylogo{
+    width: 65px;
+ 
+    height: auto;
+    display: block;
+  }
   .size-special-item{
     -ms-flex: 0 0 22%;
     flex: 0 0 22%;
@@ -888,7 +894,7 @@ box-shadow: 6px 9px 15px -1px #000000;
       padding: 5px;
   }
   .link-leave-planet{
-    margin-top:1rem;
+    margin-top:0.6rem;
 
   }
  
@@ -1012,6 +1018,12 @@ border-radius: 2px;
   transform: scale(1.1);
 }
 @media screen and (max-width: 993px) {
+  .mylogo{
+    width: 50px;
+ 
+    height: auto;
+    display: block;
+  }
   .cadre-secondaire{
     border-radius: 2px;
       padding: 1px;
