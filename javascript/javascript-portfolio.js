@@ -43,13 +43,13 @@ var b = 0;
 // });
 
 ScrollReveal().reveal(".test", { delay: 500 });
-ScrollReveal().reveal(".bloc1", { delay: 500 });
-ScrollReveal().reveal(".bloc2", { delay: 700 });
-ScrollReveal().reveal(".bloc3", { delay: 900 });
-ScrollReveal().reveal(".bloc4", { delay: 1100 });
-ScrollReveal().reveal(".bloc5", { delay: 1300 });
-ScrollReveal().reveal(".bloc6", { delay: 1500 });
-ScrollReveal().reveal(".bloc7", { delay: 1700 });
+// Initialize ScrollReveal for .test
+ScrollReveal().reveal(".test", { delay: 500 });
+
+// Loop through blocs 1 to 9 for ScrollReveal
+for (let i = 1; i <= 9; i++) {
+  ScrollReveal().reveal(`.bloc${i}`, { delay: 500 + (i - 1) * 200 });
+}
 
 var scroll =
   window.requestAnimationFrame ||
@@ -129,12 +129,23 @@ btnSendEmail.addEventListener("click", () => {
   window.location.href = "mailto:antonimalki1990@gmail.com";
 });
 
-document.getElementById("jedeclarecontent").hidden = true;
-document.getElementById("maraboucontent").hidden = true;
-document.getElementById("dgacontent").hidden = true;
-document.getElementById("rsicontent").hidden = true;
-document.getElementById("cafcontent").hidden = true;
-document.getElementById("gpnetcontent").hidden = true;
+const planetContents = [
+  "jedeclarecontent",
+  "maraboucontent",
+  "dgacontent",
+  "rsicontent",
+  "cafcontent",
+  "gpnetcontent",
+  "hpcontent",
+  "af2content"
+];
+
+planetContents.forEach(id => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.hidden = true;
+  }
+});
 
 var bgstars = document.getElementById("starsbg");
 
